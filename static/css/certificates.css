@@ -1,0 +1,16 @@
+.certificates-head {
+    color: var(--white);
+    text-align: center;
+}
+
+.certificate {
+    display: flex;
+}
+
+.certificate-img {
+    text-align: center;
+}
+
+.certificate-img .img {
+    width: 350px;
+}

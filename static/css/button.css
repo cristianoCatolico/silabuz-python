@@ -1,0 +1,66 @@
+.button {
+    background: var(--purple);
+    color: var(--white);
+    font: var(--button);
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 13px;
+    padding-block-end: 13px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button2 {
+    /* background: var(--purple); */
+    color: var(--purple);
+    font: var(--button);
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    border: 3px solid var(--purple);
+    text-decoration: none;
+    text-align: center;
+}
+
+.button.is-secondary {
+    background: unset;
+    color: var(--purple);
+    border: 2px solid var(--purple);
+}
+
+.button a {
+    background: var(--purple);
+    color: var(--white);
+    font: var(--button);
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 13px;
+    padding-block-end: 13px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button-linkedin {
+    background: var(--linkedin);
+    color: var(--white);
+    font: var(--button);
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+    margin: 0 120px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    border: 1px solid var(--white);
+    text-decoration: none;
+    text-align: center;
+}

@@ -1,0 +1,67 @@
+.project-head {
+    text-align: center;
+}
+
+.project-img {
+    text-align: center;
+    /* padding-left: 50px; */
+}
+
+.project-img .img{
+    width: 90%;
+    border-radius: 50px;
+}
+
+.project-description {
+    text-align: center;
+    /* margin-inline: 15px; */
+}
+
+.project-description p {
+    text-align: justify;
+}
+
+.project {
+    padding-bottom: 20px;
+}
+/* .img {
+    width: 80%;
+    padding-top: 20px;
+} */
+/* Para Descktop */
+@media screen and (min-width: 768px) {
+    .project-head {
+        margin-inline: 150px;
+    }
+    .project {
+        display: flex;
+        align-items: flex-start;
+    }
+    .project-img {
+        order: 2;
+    }
+    .project-description {
+        order: 1;
+        padding-right: 15px;
+    }
+    .project-img .img{
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .project {
+        margin-inline: 50px;
+    }
+    .project-head {
+        margin-inline: 250px;
+    }
+    .project-img {
+        margin-left: 50px;
+    }
+    .project-img .img{
+        width: 500px;
+        /* margin-left: 50px; */
+        /* margin-right: 50px; */
+    }
+}

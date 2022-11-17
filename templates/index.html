@@ -1,0 +1,19 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}
+Home
+{% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='catolico.css') }}" >
+{% endblock %}
+
+{% block content %}
+<div>
+    <a href="{{url_for('index')}}">Home</a>
+    {% if current_user.is_anonymous %}
+    <a href="{{url_for('login')}}">Login</a>
+    {% else %}
+    <a href="{{url_for('logout')}}">Logout</a>
+    {% endif %}
+</div>
+
+{% endblock %}
