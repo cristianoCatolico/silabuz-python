@@ -6,16 +6,20 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_bootstrap import Bootstrap
 from dotenv import load_dotenv
-from flask_login import LoginManager
+from flask_login import (
+    LoginManager,
+    logout_user,
+    login_required,
+    current_user,
+    login_user,
+)
+
+from app import create_app
 
 load_dotenv()
 
-app = Flask(__name__)
+app = create_app()
 
-app.config.from_object(Config)
-db= SQLAlchemy(app)
-migrate= Migrate(app, db)
-Bootstrap(app)
 login= LoginManager(app)
 login.login_view = 'login'
 

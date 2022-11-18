@@ -1,5 +1,7 @@
-from profile import  db
+from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+
+db = SQLAlchemy()
 
 class Alumno(db.Model):
     id = db.Column(db.Integer, autoincrement = True ,primary_key = True)
